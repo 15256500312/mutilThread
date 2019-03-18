@@ -1,0 +1,14 @@
+#redis的配置文件
+spring:
+    cache:
+        type: redis
+    redis:
+        host: 127.0.0.1
+        port: 6379
+        jedis:
+          pool:
+            max-idle: 8
+            max-wait:
+                  second: 1000
+                  nanos: 0
+            max-active: 8
